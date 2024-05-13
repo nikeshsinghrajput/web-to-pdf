@@ -18,7 +18,7 @@ public class TextFormatingService {
         org.jsoup.select.Elements paragraphs = doc.getElementsByTag("p");
         for (Element paragraph : paragraphs) {
         	System.out.println("paragraph => "+paragraph.text());
-            extractedContent.append(paragraph.text()).append("\n");
+            extractedContent.append("<h2>").append(paragraph.text()).append("</h2>");
         }
         return extractedContent.toString();
 	}

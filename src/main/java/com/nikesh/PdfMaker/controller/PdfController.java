@@ -131,7 +131,7 @@ public class PdfController {
 	        System.out.println("paragraphs set");
 	        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 	        ITextRenderer renderer = new ITextRenderer();
-	        //renderer.writeNextDocument(1);
+	      
 	        // Render extracted content to PDF
 	        String xmlContent = "<root>" + extractedContent + "</root>";
 	        System.out.println("render object created"+xmlContent);
